@@ -7,12 +7,13 @@
     <nz-header class="bf-header bf-header-item1">
       <i class="bf-menu-trigger" nz-icon [nzType]="isCollapsed?'menu-unfold':'menu-fold'" (click)="collapsedTrigger()"></i>
       <app-reuse-tab style="float:left;" #reuseTab id="__reuseTab" (changeTabSize)="tabSize($event)" ></app-reuse-tab>
+      <app-header style="float:right;width:270px;"></app-header>
     </nz-header>
     <nz-content class="bf-content">
       <router-outlet></router-outlet>
     </nz-content>
     <nz-footer class="bf-footer">
-
+      <app-footer></app-footer>
     </nz-footer>
   </nz-layout>
 

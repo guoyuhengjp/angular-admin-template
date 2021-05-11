@@ -12,7 +12,7 @@ export class BasicLayoutComponent implements OnInit, AfterViewInit {
 
   isCollapsed = false;
   triggerTemplate = null;
-  sidebarWidth: any = 256;
+  sidebarWidth: any = 320;
   tabWidth: any = 0;
 
   @ViewChild('trigger', { static: true }) customTrigger: TemplateRef<void>;

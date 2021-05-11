@@ -1,1 +1,31 @@
-<p>header works!</p>
+
+<div class="bf-header-wrap">
+
+  <span class="bf-header-icon">
+    <i nz-icon nzType="search" nzTheme="outline"></i>
+  </span>
+
+  <span class="bf-header-icon">
+    <i nz-icon nzType="question-circle" nzTheme="outline"></i>
+  </span>
+
+  <span class="bf-header-icon">
+        <nz-badge [nzCount]="2" class="bf-badge">
+            <i nz-icon nzType="bell" nzTheme="outline"></i>
+        </nz-badge>
+  </span>
+
+  <span class="bf-header-icon" nz-dropdown [nzDropdownMenu]="userSettingMenu">
+    <nz-avatar nzSize="small" [nzSrc]="user.avatar"></nz-avatar>
+    <span style="font-size: .825rem; margin-left: .5rem">かく</span>
+  </span>
+
+  <nz-dropdown-menu #userSettingMenu="nzDropdownMenu">
+    <ul nz-menu class="bf-header_usr_menu">
+      <li nz-menu-item>
+        <a><i nz-icon nzType="logout" nzTheme="outline" class="bf-header_usr_menu_icon"></i><span>logout</span></a>
+      </li>
+    </ul>
+  </nz-dropdown-menu>
+
+</div>

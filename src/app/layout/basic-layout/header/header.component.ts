@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-header',
@@ -10,7 +8,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   @Input() isCollapsed: boolean;
-
+  user = {avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png'};
   constructor() { }
 
   ngOnInit(): void {

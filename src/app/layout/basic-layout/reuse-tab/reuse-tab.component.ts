@@ -2,9 +2,9 @@ import { Component, ElementRef, Output, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map, mergeMap, take } from 'rxjs/operators';
-import {PlatformCoreService} from '../../../core/services/platform-core.service';
-import {AppReuseStrategy} from '../../../core/app-reuse-strategy';
-import {TabItem} from '../../../core/constants/tabItem';
+import { PlatformCoreService } from '../../../core/services/platform-core.service';
+import { AppReuseStrategy } from '../../../core/app-reuse-strategy';
+import { TabItem } from '../../../core/constants/tabItem';
 
 @Component({
   selector: 'app-reuse-tab',
@@ -31,7 +31,7 @@ export class ReuseTabComponent {
   /**
    * SidebarのWidth
    */
-  sidebarWidth: 256;
+  sidebarWidth: 320;
 
   /**
    * headerのWidth

@@ -8,6 +8,8 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzBadgeModule } from 'ng-zorro-antd/badge';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 
 @NgModule({
   exports: [
@@ -15,7 +17,9 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
     NzButtonModule,
     NzDropDownModule,
     NzMenuModule,
-    NzIconModule
+    NzIconModule,
+    NzBadgeModule,
+    NzAvatarModule
   ]
 })
 export class NgZorroModule { }
