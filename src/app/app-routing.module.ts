@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {BasicLayoutComponent} from './layout/basic-layout/basic-layout.component';
+import { BasicLayoutComponent } from './layout/basic-layout/basic-layout.component';
 
 const routes: Routes = [
   {
@@ -12,6 +12,10 @@ const routes: Routes = [
         path: 'dashboard',
         loadChildren: () => import('./feature/dashboard/dashboard.module').then(m => m.DashboardModule)
       },
+      {
+        path: 'form',
+        loadChildren: () => import('./feature/form/form.module').then(m => m.FormModule)
+      }
     ]
   }
 ];

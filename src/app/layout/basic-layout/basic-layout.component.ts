@@ -11,8 +11,7 @@ import { fromEvent } from 'rxjs';
 export class BasicLayoutComponent implements OnInit, AfterViewInit {
 
   isCollapsed = false;
-  triggerTemplate = null;
-  sidebarWidth: any = 320;
+  sidebarWidth: any = 256;
   tabWidth: any = 0;
 
   @ViewChild('trigger', { static: true }) customTrigger: TemplateRef<void>;

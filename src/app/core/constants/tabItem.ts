@@ -6,7 +6,7 @@ export interface TabItem {
 }
 
 export const HomePage: TabItem = {
-  title: 'home',
+  title: 'ホーム',
   module: '/dashboard/home',
   power: '',
   isSelect: true

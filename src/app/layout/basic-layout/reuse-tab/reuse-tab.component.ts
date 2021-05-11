@@ -31,7 +31,7 @@ export class ReuseTabComponent {
   /**
    * SidebarのWidth
    */
-  sidebarWidth: 320;
+  sidebarWidth: 256;
 
   /**
    * headerのWidth
@@ -122,7 +122,6 @@ export class ReuseTabComponent {
     if (tabNum < 0) {
       tabNum = 0;
     }
-    // clear
     this.tabItemShowList = this.tabItemList.slice(0, tabNum);
     this.tabItemCollapsedList = this.tabItemList.slice(tabNum);
     this.isCollapsedTab = this.tabItemList.length > tabNum;

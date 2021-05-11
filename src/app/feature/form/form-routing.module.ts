@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import {BasicComponent} from './basic/basic.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { title: 'ホーム' } },
+  { path: 'basic', component: BasicComponent, data: { title: '基本フォーム' } },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule{}
+export class FormRoutingModule{}

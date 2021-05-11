@@ -11,21 +11,21 @@ export interface MenuItem {
 export const Menus: Array<MenuItem> = [
   // dashboard
   {
-    label: 'home',
+    label: 'ホーム',
     module: '/dashboard/home',
     icon: 'home',
     isOpen: false,
     children: []
   },
   {
-    label: 'form',
+    label: 'フォーム',
     module: undefined,
     icon: 'form',
     isOpen: false,
     isGroup: true,
     children: [
       {
-        label: 'basic',
+        label: '基本フォーム',
         module: '/form/basic',
         icon: undefined,
         isOpen: false,
