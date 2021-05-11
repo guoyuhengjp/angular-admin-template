@@ -15,6 +15,9 @@ import { SharedModule } from './shared/shared.module';
 import { LayoutModule } from './layout/layout.module';
 registerLocaleData(ja);
 
+import { RouteReuseStrategy } from '@angular/router';
+import { AppReuseStrategy } from './core/app-reuse-strategy';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -28,7 +31,10 @@ registerLocaleData(ja);
     SharedModule,
     LayoutModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: ja_JP }],
+  providers: [
+    { provide: NZ_I18N, useValue: ja_JP },
+    { provide: RouteReuseStrategy, useClass: AppReuseStrategy },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
