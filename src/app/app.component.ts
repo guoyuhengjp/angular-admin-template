@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  template: '<button nz-button nzType="primary">Primary Button</button><router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'build-farm-pro';
 }
