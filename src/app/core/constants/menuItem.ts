@@ -1,6 +1,6 @@
 export interface MenuItem {
   module: string;
-  children?: Array<MenuItem>;
+  children: Array<MenuItem>;
   label: string;
   isGroup?: boolean;
   icon: string;
@@ -9,10 +9,28 @@ export interface MenuItem {
 
 
 export const Menus: Array<MenuItem> = [
+  // dashboard
   {
     label: 'dashboard',
     module: '/dashboard/home',
     icon: 'home',
-    isOpen: false
+    isOpen: false,
+    children: []
+  },
+  {
+    label: 'form',
+    module: undefined,
+    icon: 'form',
+    isOpen: false,
+    isGroup: true,
+    children: [
+      {
+        label: 'basic',
+        module: '/form/basic',
+        icon: undefined,
+        isOpen: false,
+        children: []
+      }
+    ]
   }
 ];

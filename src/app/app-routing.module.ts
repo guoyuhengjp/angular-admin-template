@@ -5,7 +5,14 @@ import {BasicLayoutComponent} from './layout/basic-layout/basic-layout.component
 const routes: Routes = [
   {
     path: '',
-    component: BasicLayoutComponent
+    component: BasicLayoutComponent,
+    children: [
+      { path: '', redirectTo: 'dashboard/home', pathMatch: 'full' },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./feature/dashboard/dashboard.module').then(m => m.DashboardModule)
+      },
+    ]
   }
 ];
 

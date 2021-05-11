@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicLayoutComponent implements OnInit {
 
+  isCollapsed = false;
+  triggerTemplate = null;
+  sidebarWidth: any = 256;
+  tabWidth: any = 0;
   constructor() { }
 
   ngOnInit(): void {
