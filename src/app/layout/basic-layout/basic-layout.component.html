@@ -1,17 +1,17 @@
 <nz-layout class="full-screen">
-  <nz-sider [nzWidth]="sidebarWidth" nzCollapsible class="bst-sider-menu" [(nzCollapsed)]="isCollapsed" id="__siderbar">
+  <nz-sider [nzWidth]="sidebarWidth" nzCollapsible class="bf-sider-menu" [(nzCollapsed)]="isCollapsed" id="__siderbar">
     <app-sidebar [isCollapsed]="isCollapsed"></app-sidebar>
   </nz-sider>
 
   <nz-layout>
-    <nz-header class="bst-header bst-header-item1">
-      <i class="bst-menu-trigger" nz-icon [nzType]="isCollapsed?'menu-unfold':'menu-fold'" (click)="collapsedTrigger()"></i>
+    <nz-header class="bf-header bf-header-item1">
+      <i class="bf-menu-trigger" nz-icon [nzType]="isCollapsed?'menu-unfold':'menu-fold'" (click)="collapsedTrigger()"></i>
       <app-reuse-tab style="float:left;" #reuseTab id="__reuseTab" (changeTabSize)="tabSize($event)" ></app-reuse-tab>
     </nz-header>
-    <nz-content class="bst-content">
+    <nz-content class="bf-content">
       <router-outlet></router-outlet>
     </nz-content>
-    <nz-footer class="bst-footer">
+    <nz-footer class="bf-footer">
 
     </nz-footer>
   </nz-layout>
