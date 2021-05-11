@@ -11,7 +11,7 @@ export interface MenuItem {
 export const Menus: Array<MenuItem> = [
   // dashboard
   {
-    label: 'dashboard',
+    label: 'home',
     module: '/dashboard/home',
     icon: 'home',
     isOpen: false,
